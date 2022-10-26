@@ -1,0 +1,138 @@
+nav {
+  position: relative;
+  padding: 7.5;
+}
+.logo {
+  width: 84px;
+  height: 48px;
+}
+
+.language__menu {
+  position: relative;
+  display: none;
+  margin-right: 16px;
+  border-right: 1px solid #e4e7ec;
+
+  .language {
+    position: absolute;
+    width: 114px;
+    min-height: 168px;
+    padding: 24px 16px;
+    top: 50px;
+    left: 50%;
+
+    transform: translate(-50%);
+    z-index: -1;
+    opacity: 0;
+    overflow: hidden;
+    background-image: url(../../img/gradient-desktop.jpg);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  &.language__menu_active .language {
+    z-index: 10;
+    opacity: 1;
+    overflow: visible;
+  }
+}
+.language__menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 81px;
+  height: 24px;
+  box-sizing: content-box;
+  padding-right: 22px;
+}
+
+.menu-butto__svg {
+  margin-left: 10px;
+  width: 12px;
+  height: auto;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+.language__menu_active .menu-butto__svg {
+  transform: rotate(270deg);
+  fill: var(--primary-white-color);
+}
+.language__list {
+  margin-bottom: 16px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--primary-white-color);
+  a {
+    display: flex;
+    align-items: center;
+  }
+  &.active {
+    padding: 8px;
+    background-image: url(../../img/gradient-desktop.jpg);
+    border-radius: 100px;
+  }
+}
+.language__img {
+  margin-right: 8px;
+}
+
+.log-in {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 87px;
+  height: 40px;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: #667085;
+}
+.sign-up {
+  margin-left: 12px;
+  width: 99px;
+  height: 40px;
+  background: #6941c6;
+  border: 1px solid #6941c6;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  header {
+    top: 32px;
+  }
+  nav.container {
+    display: flex;
+    align-items: center;
+    width: 1120px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+  }
+  .logo {
+    width: 84px;
+    height: 48px;
+  }
+  .language__menu {
+    display: block;
+  }
+  .log-in {
+    display: flex;
+  }
+}

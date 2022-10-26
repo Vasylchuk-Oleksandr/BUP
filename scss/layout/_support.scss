@@ -1,0 +1,134 @@
+.support {
+  padding: 40px 0 43px;
+  background: linear-gradient(45deg, #101828 0%, #475467 100%);
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.support__pretitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 173px;
+  height: 28px;
+  margin: 0 auto;
+  background: rgba(246, 245, 255, 0.3);
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: #ffffff;
+}
+.support__title {
+  margin: 12px 0 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 111%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.support__deskription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.support__list {
+  margin: 24px 0 56px;
+  margin-left: -5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.support__item {
+  margin-left: 24px;
+  &:nth-child(n + 4) {
+    margin-top: 16px;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.support__link {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #ffffff;
+
+  img {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+}
+
+.support__img {
+}
+
+@media screen and (min-width: 768px) {
+  .support__item {
+    &:nth-child(n + 4) {
+      margin-top: 0px;
+    }
+  }
+}
+@media screen and (min-width: 950px) {
+  .support {
+    padding: 96px 0 140px;
+  }
+  .support__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .support__deskription {
+    width: 600px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .support__list {
+    margin: 40px 0 48px;
+  }
+  .support__item {
+    margin-left: 30px;
+  }
+  .support__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .support__container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 976px;
+    height: 72px;
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 88px;
+  }
+}

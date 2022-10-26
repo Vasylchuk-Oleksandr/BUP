@@ -1,0 +1,145 @@
+.company {
+  padding: 40px 0;
+  background: #f2f4f7;
+}
+
+.company__cards {
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  padding: 40px 24px;
+  gap: 24px;
+  background: #ffffff;
+  border-radius: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.company__title {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: -0.02em;
+  color: #18214d;
+}
+.company__subtitle {
+  min-height: 64px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 133%;
+  color: #18214d;
+}
+.company__deskription {
+  margin: 79px 0 41px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #3e4462;
+}
+.company__box {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.company__box-cirkl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  border-radius: 50%;
+  background: #eff2f6;
+}
+.company__box-svg {
+  width: 24px;
+  height: 24px;
+}
+.company__box-text {
+  width: 231px;
+}
+
+.company__box-text-title {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  color: #344054;
+}
+.company__box-text-deskription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #667085;
+}
+.company__box-cirkl {
+}
+
+@media screen and (min-width: 768px) {
+  .company__box {
+    width: 100%;
+  }
+  .company__box-text {
+    width: 231px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .company {
+    padding: 96px 0 112px;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .company__cards {
+    box-sizing: border-box;
+    width: 500px;
+    padding: 40px;
+    margin-bottom: 0;
+    margin-right: 48px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .company__title {
+    margin-bottom: 0;
+    font-size: 48px;
+    line-height: 125%;
+  }
+  .company__subtitle {
+    min-height: 88px;
+    font-size: 36px;
+    line-height: 122%;
+  }
+  .company__deskription {
+    margin: 51px 0 57px;
+  }
+  .company__box {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .company__box-text {
+    width: 286px;
+  }
+
+  .company__box-text-title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 150%;
+  }
+}

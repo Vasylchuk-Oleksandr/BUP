@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test-task</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="http://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="./font/inter/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./font/montserrat/stylesheet.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="/"><img class="logo" src="./img/logo.png" alt="logo" /></a>
+        <div id="nav__burger-menu" class="nav__burger-menu">
+          <div class="burger-menu_button">
+            <!-- <img class="burger-menu_lines" src="./svg/burger.svg" alt="" /> -->
+            <span class="burger-menu_lines"></span>
+            <div class="burger-menu_nav">
+              <ul>
+                <li class="burger-menu_link"><a href="#">About</a></li>
+                <li class="burger-menu_link"><a href="#">Features</a></li>
+                <li class="burger-menu_link"><a href="#">Price</a></li>
+                <li class="burger-menu_link"><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div id="language__menu" class="language__menu">
+              <div class="language__menu-button">
+                <img src="./img/Bup.png" alt="" class="menu-butto__img" />
+
+                <img class="menu-butto__svg" src="./svg/arrov.svg" alt="" />
+              </div>
+              <ul class="language">
+                <li class="language__list active">
+                  <a href="#">
+                    <img
+                      src="./img/Bup.png"
+                      alt="united-kingdom"
+                      class="language__img" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="log-in">Log in</a>
+            <a href="#" class="log-in sign-up">Sign up</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            More that social network <span>for influencer</span>
+          </h1>
+          <p class="hero__deskription">
+            Powerful, self-serve product and growth analytics to help you
+            convert, engage, and retain more users.
+          </p>
+          <div class="hero__box-link">
+            <a href="" class="hero__link-need">
+              <img src="./svg/Company.svg" alt="" />I need to</a
+            >
+            <a href="" class="hero__link-influencer">
+              <img src="./svg/Influencer.svg" alt="" />I am an influencer</a
+            >
+          </div>
+          <div class="hero__cirkl-firs">
+            <div class="hero__cirkl-sekond">
+              <picture clas="hero__sotial">
+                <source media="(max-width: 767px)" srcset="./img/icons.png" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/icons-desktop.png" />
+                <img clas="hero__sotial" src="./img/icons.png" alt="" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="container">
+          <div class="slider__text">
+            <span class="slider__pretitle">What is BUP?</span>
+            <h2 class="slider__title">What we offer to you</h2>
+            <p class="slider__deskription">
+              Everything you need to know about the product and billing. Can’t
+              find the answer you’re looking for? Please chat to our friendly
+              team.
+            </p>
+          </div>
+          <div class="slider__box-buton">
+            <span class="slider__number"><span id="number"></span> of 3</span>
+            <div>
+              <div class="slider__clicke" onclick="minusSlide()">
+                <img
+                  src="./svg/arrov.svg"
+                  alt="arrov"
+                  class="slider__button prev" />
+              </div>
+              <div class="slider__clicke" onclick="plusSlide()">
+                <img
+                  src="./svg/arrov.svg"
+                  alt="arrov"
+                  class="slider__button next" />
+              </div>
+            </div>
+          </div>
+          <ul id="#slider" class="slider__list">
+            <li class="slider__item">
+              <div>
+                <img src="./img/Image.jpg" alt="post" class="slider__img" />
+                <div class="slider__container">
+                  <div class="slider__box-text">
+                    <h3 class="box-text__title">Social network</h3>
+                    <p class="box-text__deskription">
+                      For collaborations to be effective, work with those at
+                      your level. No more messages with juniors if you are
+                      senior
+                    </p>
+                    <ul class="box-text__list">
+                      <li class="box-text__item">
+                        <div><img src="./svg/check.svg" alt="check" /></div>
+                        Leverage automation to move fast
+                      </li>
+                      <li class="box-text__item">
+                        <div><img src="./svg/check.svg" alt="check" /></div>
+                        Leverage automation to move fast
+                      </li>
+                      <li class="box-text__item">
+                        <div><img src="./svg/check.svg" alt="check" /></div>
+                        Leverage automation to move fast
+                      </li>
+                    </ul>
+                    <a href="#" class="box-text__link"
+                      ><img src="./svg/slider-link.svg" alt="" />Make a post</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slider__item">
+              <div>
+                <img src="./img/Image.jpg" alt="post" class="slider__img" />
+                <div class="slider__container">
+                  <div class="slider__box-text">
+                    <h3 class="box-text__title">Social network</h3>
+                    <p class="box-text__deskription">
+                      For collaborations to be effective, work with those at
+                      your level. No more messages with juniors if you are
+                      senior
+                    </p>
+                    <ul class="box-text__list">
+                      <li class="box-text__item">
+                        <div><img src="./svg/check.svg" alt="check" /></div>
+                        Leverage automation to move fast
+                      </li>
+                      <li class="box-text__item">
+                        <div><img src="./svg/check.svg" alt="check" /></div>
+                        Leverage automation to move fast
+                      </li>
+                      <li class="box-text__item">
+                        <div><img src="./svg/check.svg" alt="check" /></div>
+                        Leverage automation to move fast
+                      </li>
+                    </ul>
+                    <a href="#" class="box-text__link"
+                      ><img src="./svg/slider-link.svg" alt="" />Make a post</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slider__item">
+              <div>
+                <img src="./img/Image.jpg" alt="post" class="slider__img" />
+                <div class="slider__container">
+                  <div class="slider__box-text">
+                    <h3 class="box-text__title">Social network</h3>
+                    <p class="box-text__deskription">
+                      For collaborations to be effective, work with those at
+                      your level. No more messages with juniors if you are
+                      senior
+                    </p>
+                    <ul class="box-text__list">
+                      <li class="box-text__item">
+                        <div><img src="./svg/check.svg" alt="check" /></div>
+                        Leverage automation to move fast
+                      </li>
+                      <li class="box-text__item">
+                        <div><img src="./svg/check.svg" alt="check" /></div>
+                        Leverage automation to move fast
+                      </li>
+                      <li class="box-text__item">
+                        <div><img src="./svg/check.svg" alt="check" /></div>
+                        Leverage automation to move fast
+                      </li>
+                    </ul>
+                    <a href="#" class="box-text__link"
+                      ><img src="./svg/slider-link.svg" alt="" />Make a post</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="support">
+        <div class="container">
+          <p class="support__pretitle">Supported platforms</p>
+          <h2 class="support__title">All-in-one platform</h2>
+          <p class="support__deskription">
+            Define your search criteria, such as type of social network, fieldof
+            activity, engagement rate and much more!
+            <br />
+            Find out which influencers are the best to promote your brand.
+          </p>
+          <ul class="support__list">
+            <li class="support__item">
+              <a href="" class="support__link"
+                ><img src="./img/Twitter.png" alt="Twitter" />Twitter</a
+              >
+            </li>
+            <li class="support__item">
+              <a href="" class="support__link"
+                ><img src="./img/TikTok.png" alt="TikTok" />TikTok</a
+              >
+            </li>
+            <li class="support__item">
+              <a href="" class="support__link"
+                ><img src="./img/YouTube.png" alt="YouTube" />YouTube</a
+              >
+            </li>
+            <li class="support__item">
+              <a href="" class="support__link"
+                ><img src="./img/Facebook.png" alt="Facebook" />Facebook</a
+              >
+            </li>
+            <li class="support__item">
+              <a href="" class="support__link"
+                ><img src="./img/social.png" alt="Instagram" />Instagram</a
+              >
+            </li>
+          </ul>
+          <div class="support__container-img">
+            <picture class="support__img">
+              <source
+                media="(max-width: 950px)"
+                srcset="./img/supports-mobile.png" />
+              <source
+                media="(min-width: 951px)"
+                srcset="./img/supports-desktop.png" />
+              <img
+                src="./img/supports-mobile.png"
+                alt="supports"
+                class="support__img" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="company">
+        <div class="container">
+          <div class="company__cards">
+            <h2 class="company__title">For company</h2>
+            <p class="company__subtitle">Advanced filters</p>
+            <p class="company__deskription">
+              You can even sync designs from your cloud storage!
+            </p>
+            <div class="company__box">
+              <div class="company__box-cirkl">
+                <img
+                  src="./svg/Compare.svg"
+                  alt="Compare"
+                  class="company__box-svg" />
+              </div>
+
+              <div class="company__box-text">
+                <h3 class="company__box-text-title">Comprassion</h3>
+                <p class="company__box-text-deskription">
+                  You can even sync designs from your cloud storage!
+                </p>
+              </div>
+            </div>
+            <div class="company__box">
+              <div class="company__box-cirkl">
+                <img src="./svg/diagrama.svg" alt="" class="company__box-svg" />
+              </div>
+              <div class="company__box-text">
+                <h3 class="company__box-text-title">Advanced analytic</h3>
+                <p class="company__box-text-deskription">
+                  You can even sync designs from your cloud storage!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="company__cards">
+            <h2 class="company__title">For ifluencers</h2>
+            <p class="company__subtitle">Exlusive profile information</p>
+            <p class="company__deskription">
+              You can even sync designs from your cloud storage!
+            </p>
+            <div class="company__box">
+              <div class="company__box-cirkl">
+                <img
+                  src="./svg/Friends.svg"
+                  alt="Compare"
+                  class="company__box-svg" />
+              </div>
+
+              <div class="company__box-text">
+                <h3 class="company__box-text-title">Who’s interested in you</h3>
+                <p class="company__box-text-deskription">
+                  You can even sync designs from your cloud storage!
+                </p>
+              </div>
+            </div>
+            <div class="company__box">
+              <div class="company__box-cirkl">
+                <img
+                  src="./svg/subscription.svg"
+                  alt="subscription"
+                  class="company__box-svg" />
+              </div>
+              <div class="company__box-text">
+                <h3 class="company__box-text-title">Marketing Automation</h3>
+                <p class="company__box-text-deskription">
+                  You can even sync designs from your cloud storage!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="line">
+        <div class="container">
+          <div class="line__box">
+            <p class="line__box-deskription">
+              We had an incredible experience working with BUP and were
+              impressed they made such a big difference in only three weeks.
+            </p>
+            <h2 class="line__box-name">Jane Cooper</h2>
+            <p class="line__box-position">CEO, ABC Corporation</p>
+          </div>
+          <div class="line__image"></div>
+        </div>
+      </section>
+      <section class="plans">
+        <div class="container">
+          <p class="plans__qestion">How much it cost?</p>
+          <h2 class="plans__title">Plans for all sizes</h2>
+          <p class="plans__deskription">
+            Simple, transparent pricing that grows with you. Try any plan free
+            for 30 days.
+          </p>
+          <div class="plans__container-button">
+            <a href="" class="container-button__link purpul">Schedule</a>
+            <a href="" class="container-button__link">Schedule</a>
+          </div>
+          <ul class="plans__list">
+            <li class="plans__item">
+              <span class="plans__item__pretitle">Basic plan</span>
+              <h3 class="plans__item__prise">$19</h3>
+              <p class="plans__item__description">
+                Go beyond email and customize your workflow
+              </p>
+              <ul class="item-commercial__list">
+                <li class="item-commercial__string">
+                  <div class="item-commercial__string-cirkle">
+                    <img src="./svg/check.svg" alt="check" />
+                  </div>
+                  30 Non-Commercial Site
+                </li>
+                <li class="item-commercial__string">
+                  <div class="item-commercial__string-cirkle">
+                    <img src="./svg/check.svg" alt="check" />
+                  </div>
+                  30 Non-Commercial Site
+                </li>
+                <li class="item-commercial__string">
+                  <div class="item-commercial__string-cirkle">
+                    <img src="./svg/check.svg" alt="check" />
+                  </div>
+                  30 Non-Commercial Site
+                </li>
+                <li class="item-commercial__string">
+                  <div class="item-commercial__string-cirkle">
+                    <img src="./svg/check.svg" alt="check" />
+                  </div>
+                  30 Non-Commercial Site
+                </li>
+              </ul>
+              <a href="#" class="plans__item-link">Select Plan</a>
+            </li>
+            <li class="plans__item">
+              <span class="plans__item__pretitle">Basic plan</span>
+              <h3 class="plans__item__prise">$19</h3>
+              <p class="plans__item__description">
+                Go beyond email and customize your workflow
+              </p>
+              <ul class="item-commercial__list">
+                <li class="item-commercial__string">
+                  <div class="item-commercial__string-cirkle">
+                    <img src="./svg/check.svg" alt="check" />
+                  </div>
+                  30 Non-Commercial Site
+                </li>
+                <li class="item-commercial__string">
+                  <div class="item-commercial__string-cirkle">
+                    <img src="./svg/check.svg" alt="check" />
+                  </div>
+                  30 Non-Commercial Site
+                </li>
+                <li class="item-commercial__string">
+                  <div class="item-commercial__string-cirkle">
+                    <img src="./svg/check.svg" alt="check" />
+                  </div>
+                  30 Non-Commercial Site
+                </li>
+                <li class="item-commercial__string">
+                  <div class="item-commercial__string-cirkle">
+                    <img src="./svg/check.svg" alt="check" />
+                  </div>
+                  30 Non-Commercial Site
+                </li>
+              </ul>
+              <a href="#" class="plans__item-link">Select Plan</a>
+            </li>
+            <li class="plans__item">
+              <span class="plans__item__pretitle">Basic plan</span>
+              <h3 class="plans__item__prise">$19</h3>
+              <p class="plans__item__description">
+                Go beyond email and customize your workflow
+              </p>
+              <ul class="item-commercial__list">
+                <li class="item-commercial__string">
+                  <div class="item-commercial__string-cirkle">
+                    <img src="./svg/check.svg" alt="check" />
+                  </div>
+                  30 Non-Commercial Site
+                </li>
+                <li class="item-commercial__string">
+                  <div class="item-commercial__string-cirkle">
+                    <img src="./svg/check.svg" alt="check" />
+                  </div>
+                  30 Non-Commercial Site
+                </li>
+                <li class="item-commercial__string">
+                  <div class="item-commercial__string-cirkle">
+                    <img src="./svg/check.svg" alt="check" />
+                  </div>
+                  30 Non-Commercial Site
+                </li>
+                <li class="item-commercial__string">
+                  <div class="item-commercial__string-cirkle">
+                    <img src="./svg/check.svg" alt="check" />
+                  </div>
+                  30 Non-Commercial Site
+                </li>
+              </ul>
+              <a href="#" class="plans__item-link">Select Plan</a>
+            </li>
+          </ul>
+        </div>
+        <div class="plans__cirkl-baskgraund"></div>
+      </section>
+      <section class="join">
+        <div class="container">
+          <h2 class="join__title">Join 4,000+ companies already growing</h2>
+          <ul class="join__list">
+            <li class="join__item">
+              <p class="join__number">108.6K</p>
+              <p class="join__text">Followers</p>
+            </li>
+            <li class="join__item">
+              <p class="join__number">28.6K</p>
+              <p class="join__text">Customers</p>
+            </li>
+            <li class="join__item">
+              <p class="join__number">$7.6K</p>
+              <p class="join__text">Donates</p>
+            </li>
+            <li class="join__item">
+              <p class="join__number">300+</p>
+              <p class="join__text">Projects</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <div class="footer__text">
+            <a href="" class="footer__logo"
+              ><img src="./img/logo-footer.png" alt="logo"
+            /></a>
+            <p class="footer__deskription">
+              Design amazing digital experiences that create more happy in the
+              world.
+            </p>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Overview</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Features</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Pricing</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Help</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__item-link">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__app">
+            <h2 class="footer__app-title">Get the app</h2>
+            <div class="footer__app-container">
+              <a href="" class="footer__app-link"
+                ><img src="./img/apple.png" alt="App store actions" />
+              </a>
+              <a href="" class="footer__app-link"
+                ><img src="./img/gogle.png" alt="App store actions" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__reserved">
+          <ul class="footer__reserved-list">
+            <li>
+              <a href="" class="footer__reserved-link"
+                ><img src="./svg/Twitter.svg" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="footer__reserved-link"
+                ><img src="./svg/Instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="footer__reserved-link"
+                ><img src="./svg/Facebook.svg" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="footer__reserved-link"
+                ><img src="./svg/tiktok.svg" alt="TikTok"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="footer__reserved-link"
+                ><img src="./svg/youtybe.svg" alt=YyoTybe" /></a
+              >
+            </li>
+            <li>
+              <a href="" class="footer__reserved-link"
+                ><img src="./svg/linkidin.svg" alt="linkidin"
+              /></a>
+            </li>
+          </ul>
+          <p class="footer__reserved-text">© 2077 BUP. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="preloader">
+      <svg
+        class="preloader__image"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512">
+        <path
+          fill="currentColor"
+          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path>
+      </svg>
+    </div>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>

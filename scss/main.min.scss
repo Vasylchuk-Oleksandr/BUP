@@ -1,0 +1,17 @@
+@import "./base/_base.scss";
+@import "./base/_container.scss";
+
+@import "./component/header";
+@import "./component/preloader";
+@import "./component/burger";
+@import "./component/footer";
+
+@import "./layout/hero";
+@import "./layout/slider";
+@import "./layout/support";
+@import "./layout/company";
+@import "./layout/line";
+@import "./layout/plans";
+@import "./layout/join";
+
+@import "utilc/_variables.scss";

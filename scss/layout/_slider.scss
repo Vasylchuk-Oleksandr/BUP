@@ -1,0 +1,236 @@
+.slider {
+  position: relative;
+  padding: 40px 0;
+  z-index: 2;
+  .container {
+    position: relative;
+  }
+}
+
+.slider__text {
+}
+.slider__pretitle {
+  padding: 4px 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: #6941c6;
+  width: 122px;
+  height: 28px;
+  background: #f6f5ff;
+  border-radius: 16px;
+}
+.slider__title {
+  margin: 16px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+.slider__deskription {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 156%;
+  color: #667085;
+}
+
+.slider__img {
+  width: 343px;
+  height: 343px;
+  margin: 0 auto;
+}
+
+.slider__box-buton {
+  box-sizing: border-box;
+  position: absolute;
+  width: 343px;
+  height: 28px;
+  top: 635px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 32px 0 24px;
+  .slider__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 59px;
+    height: 28px;
+    background: #f6f5ff;
+    border-radius: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    color: #6941c6;
+    > span {
+      margin-right: 5px;
+    }
+  }
+  > div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.slider__clicke {
+  position: relative;
+  z-index: 3;
+}
+.slider__button {
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  padding: 6px;
+  cursor: pointer;
+  &.prev {
+    margin-right: 42px;
+    transform: rotate(180deg);
+  }
+}
+.slider__container {
+  padding-top: 84px;
+}
+.box-text__title {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 127%;
+  color: #101828;
+}
+.box-text__deskription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #667085;
+}
+.box-text__list {
+  margin: 32px 0;
+}
+.box-text__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  /* Gray/500 */
+
+  color: #667085;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    width: 28px;
+    height: 28px;
+    background: #f4ebff;
+    border-radius: 14px;
+  }
+}
+.box-text__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 343px;
+  height: 48px;
+  background: #6941c6;
+  border: 1px solid #6941c6;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  color: #fff;
+  img {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider__box-buton {
+    width: 440px;
+    top: 787px;
+  }
+
+  .box-text__link {
+    margin: 0 auto;
+  }
+  .slider__img {
+    width: 600px;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .slider {
+    padding: 96px 0;
+  }
+
+  .slider__title {
+    margin: 12px 0 16px;
+    font-size: 48px;
+    line-height: 125%;
+  }
+  .slider__deskription {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 64px;
+  }
+  .slider__box-buton {
+    width: 514px;
+    top: 250px;
+    left: 16px;
+    transform: translateX(0);
+  }
+
+  .slider__item > div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .slider__img {
+    width: 558px;
+    height: 558px;
+    margin: 0;
+  }
+  .slider__container {
+    padding-top: 120px;
+  }
+  .slider__box-text {
+    width: 514px;
+  }
+  .box-text__title {
+  }
+  .box-text__deskription {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .box-text__list {
+    margin-bottom: 56px;
+  }
+  .box-text__item {
+    justify-content: flex-start;
+  }
+  .box-text__link {
+    margin: 0;
+    width: 238px;
+    height: 48px;
+  }
+}

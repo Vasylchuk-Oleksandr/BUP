@@ -1,0 +1,29 @@
+.dredkramp {
+  padding: 17px 0 40px;
+
+  background: #000000;
+  .container {
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+  }
+}
+
+.dredkramp__text {
+  display: flex;
+  align-items: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  /* 2 */
+
+  color: #adadad;
+}
+.dredkramp__arrow {
+  margin: 0 8px;
+}
