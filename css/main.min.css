@@ -352,7 +352,7 @@ nav {
   text-align: center;
   align-items: flex-start;
   justify-content: flex-start;
-  background: url(../../img/gradient-mom.jpg);
+  background: url(../img/gradient-mom.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: auto;
@@ -672,7 +672,7 @@ nav {
 
 .hero {
   position: relative;
-  background: url(../../img/gradient-mom.jpg);
+  background: url(../img/gradient-mom.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
