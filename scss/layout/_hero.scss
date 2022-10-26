@@ -5,13 +5,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  .container {
-    padding: 91px 16px 171px;
+  .hero-backgaund {
     background: radial-gradient(
       75.15% 75.15% at 50% 50%,
       #ffffff 0%,
       rgba(255, 255, 255, 0) 70.62%
     );
+  }
+  .container {
+    padding: 91px 16px 171px;
   }
 }
 .hero__title {

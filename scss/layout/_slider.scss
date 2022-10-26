@@ -92,6 +92,11 @@
   height: 24px;
   padding: 6px;
   cursor: pointer;
+  transition: 0.3;
+  &:hover {
+    scale: 1.1;
+    transition: 0.3;
+  }
   &.prev {
     margin-right: 42px;
     transform: rotate(180deg);

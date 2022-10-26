@@ -77,6 +77,12 @@ nav {
 .logo {
   width: 84px;
   height: 48px;
+  transition: 0.3;
+}
+
+.logo:hover {
+  opacity: 0.8;
+  transition: 0.3;
 }
 
 .language__menu {
@@ -402,6 +408,10 @@ nav {
   color: #18214d;
 }
 
+.burger-menu_link a:hover {
+  color: #6941c6;
+}
+
 @media screen and (min-width: 1140px) {
   .burger-menu_button {
     right: 0;
@@ -453,6 +463,12 @@ nav {
 .footer__logo {
   width: 72px;
   height: 36px;
+  transition: 0.3;
+}
+
+.footer__logo:hover {
+  opacity: 0.8;
+  transition: 0.3;
 }
 
 .footer__deskription {
@@ -488,6 +504,12 @@ nav {
   font-size: 16px;
   line-height: 150%;
   color: #667085;
+  transition: 0.3;
+}
+
+.footer__item-link:hover {
+  color: #6941c6;
+  transition: 0.3;
 }
 
 .footer__app {
@@ -512,6 +534,12 @@ nav {
   width: 135px;
   height: 40px;
   margin-right: 16px;
+  transition: 0.3;
+}
+
+.footer__app-link:hover {
+  scale: 1.1;
+  transition: 0.3;
 }
 
 .footer__reserved-list {
@@ -529,6 +557,12 @@ nav {
   width: 24px;
   height: 24px;
   margin-right: 24px;
+  transition: 0.3;
+}
+
+.footer__reserved-link:hover {
+  scale: 1.1;
+  transition: 0.3;
 }
 
 .footer__reserved-text {
@@ -644,9 +678,12 @@ nav {
   background-position: center;
 }
 
+.hero .hero-backgaund {
+  background: radial-gradient(75.15% 75.15% at 50% 50%, #ffffff 0%, rgba(255, 255, 255, 0) 70.62%);
+}
+
 .hero .container {
   padding: 91px 16px 171px;
-  background: radial-gradient(75.15% 75.15% at 50% 50%, #ffffff 0%, rgba(255, 255, 255, 0) 70.62%);
 }
 
 .hero__title {
@@ -922,6 +959,12 @@ nav {
   height: 24px;
   padding: 6px;
   cursor: pointer;
+  transition: 0.3;
+}
+
+.slider__button:hover {
+  scale: 1.1;
+  transition: 0.3;
 }
 
 .slider__button.prev {
@@ -1151,6 +1194,12 @@ nav {
   font-size: 14px;
   line-height: 143%;
   color: #ffffff;
+  transition: 0.3;
+}
+
+.support__link:hover {
+  color: #6941c6;
+  transition: 0.3;
 }
 
 .support__link img {
@@ -1159,6 +1208,13 @@ nav {
   margin-right: 16px;
   background: #ffffff;
   border-radius: 50%;
+  scale: 1;
+  transition: 0.3;
+}
+
+.support__link:hover {
+  scale: 1.1;
+  transition: 0.3;
 }
 
 @media screen and (min-width: 768px) {
@@ -1605,6 +1661,7 @@ nav {
   font-size: 16px;
   line-height: 125%;
   color: #53389e;
+  transition: 0.3;
 }
 
 .plans__item-link:hover, .plans__item-link:focus, .plans__item-link:active {
@@ -1612,6 +1669,7 @@ nav {
   border: 1px solid #6941c6;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   color: #ffffff;
+  transition: 0.3;
 }
 
 @media screen and (min-width: 795px) {

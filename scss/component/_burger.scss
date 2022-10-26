@@ -136,6 +136,9 @@
   text-decoration: none;
   a {
     color: #18214d;
+    &:hover {
+      color: #6941c6;
+    }
   }
 }
 @media screen and (min-width: 1140px) {
