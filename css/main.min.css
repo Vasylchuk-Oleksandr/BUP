@@ -97,7 +97,7 @@ nav {
   z-index: -1;
   opacity: 0;
   overflow: hidden;
-  background-image: url(../../img/gradient-desktop.jpg);
+  background-image: url(../img/gradient-desktop.jpg);
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
@@ -147,7 +147,7 @@ nav {
 
 .language__list.active {
   padding: 8px;
-  background-image: url(../../img/gradient-desktop.jpg);
+  background-image: url(../img/gradient-desktop.jpg);
   border-radius: 100px;
 }
 
@@ -224,7 +224,10 @@ nav {
   bottom: 0;
   overflow: hidden;
   /* фоновый цвет */
-  background-image: linear-gradient(15deg, #98c3e8 0%, var(--accent-color) 100%);
+  background-image: url(../img/gradient-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: var(--primary-white-color);
   z-index: 10000;
 }
@@ -793,7 +796,7 @@ nav {
 
 @media screen and (min-width: 1120px) {
   .hero {
-    background-image: url(../../img/gradient-desktop.jpg);
+    background-image: url(../img/gradient-desktop.jpg);
   }
   .hero .container {
     padding: 210px 20px 270px;
@@ -1362,7 +1365,7 @@ nav {
   width: 100vw;
   height: 100%;
   padding: 40px 16px;
-  background-image: url(../../img/line.png);
+  background-image: url(../img/line.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1417,7 +1420,7 @@ nav {
   .line__image {
     width: 200px;
     height: 272px;
-    background-image: url(../../img/line-gradient.png);
+    background-image: url(../img/line-gradient.png);
     background-position: center;
     border-radius: 0px 16px 16px 0px;
   }
