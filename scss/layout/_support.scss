@@ -72,27 +72,14 @@
   font-size: 14px;
   line-height: 143%;
   color: #ffffff;
-  transition: 0.3;
-  &:hover {
-    color: #6941c6;
-    transition: 0.3;
-  }
+
   img {
     width: 32px;
     height: 32px;
     margin-right: 16px;
     background: #ffffff;
     border-radius: 50%;
-    scale: 1;
-    transition: 0.3;
   }
-  &:hover {
-    scale: 1.1;
-    transition: 0.3;
-  }
-}
-
-.support__img {
 }
 
 @media screen and (min-width: 768px) {

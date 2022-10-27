@@ -1194,12 +1194,6 @@ nav {
   font-size: 14px;
   line-height: 143%;
   color: #ffffff;
-  transition: 0.3;
-}
-
-.support__link:hover {
-  color: #6941c6;
-  transition: 0.3;
 }
 
 .support__link img {
@@ -1208,13 +1202,6 @@ nav {
   margin-right: 16px;
   background: #ffffff;
   border-radius: 50%;
-  scale: 1;
-  transition: 0.3;
-}
-
-.support__link:hover {
-  scale: 1.1;
-  transition: 0.3;
 }
 
 @media screen and (min-width: 768px) {
@@ -1536,6 +1523,7 @@ nav {
 }
 
 .plans__deskription {
+  margin-bottom: 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1718,6 +1706,7 @@ nav {
   .plans__deskription {
     width: 600px;
     margin: 0 auto;
+    margin-bottom: 40px;
     font-size: 20px;
     line-height: 150%;
     color: #667085;
